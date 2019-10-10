@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+}
+
+header{
+  /*background-image: img src="images/ClapAwaybg.png";*/
+/*  background-size: cover;
+  background-position: center;*/
+  
+}
+
+contact{
+  border-image-width: 24px;
+  float: right;
+  margin-bottom: : 20px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+ul{
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+  list-style-type: none;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a{
+  text-decoration: none;
+  color:  #000000;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+ transition: 0.2s ease;
+}
+
+ul li a:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.main{
+  max-width: 1200px;
+  margin: auto;
+  background-image: img src="images/ClapAwaybg.png";
+  background-size: cover;
+  background-position: center;
+  /*color: #827ffe;*/
+  color : #403866;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+.title h1{
+  color:  color: #827ffe;
+  font-size: 75px;
+}
+
+.body{
+background: #000;
+}
+
+
+/*here starts the css for curtain menu!*/
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 1.0s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+/* the three images*/
+ 
+
+img {
+  border: 1px solid #ddd; /* Gray border */
+  border-radius: 4px;  /* Rounded border */
+  padding: 5px; /* Some padding */
+  width: 150px; /* Set a small width */
+}
+
+  /* Add a hover effect (blue shadow) */
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+
+/*here starts the Meet the Team css */
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*.title {
+  color: #403866;
+}*/
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  background-color: #555;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #000;
+}
